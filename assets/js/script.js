@@ -130,3 +130,30 @@ function showQuestion() {
     }
 }
 
+function answerSelected(answer) {
+
+    let selectedAnswer = answer.innerHTML;
+    let correctAnswer = questions[currentQuestion].answer;
+
+    if (selectedAnswer === correctAnswer) {
+        answer.classList.add("right-answer");
+        incrementRight();
+
+    } else {
+        answer.classList.add("wrong-answer");
+        incrementWrong();
+    }
+
+    nextBtn.classList.remove("hide");
+
+    for (i = 0; i < optionElements.length; i++) {
+        optionElements[i].classList.add("disabled");
+    }
+}
+
+nextBtn.addEventListener("click", () => {
+    currentQuestion++;
+    setNextQuestion();
+});
+
+
