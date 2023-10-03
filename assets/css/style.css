@@ -50,7 +50,7 @@ h2 {
 }
 
 #start-game:hover {
-    border: 8px solid black;
+    border: 0.2px solid black;
     color: black;
 }
 
@@ -67,7 +67,7 @@ h2 {
 }
 
 #modal-button:hover {
-    border: 2px solid black;
+    border: 0.2px solid black;
     color: black;
 }
 
@@ -137,7 +137,7 @@ h2 {
 }
 
 #submit:hover {
-    border: 2px solid black;
+    border: 0.2px solid black;
     color: black;
 }
 
@@ -152,4 +152,56 @@ h2 {
     width: fit-content;
     display: none;
     border-radius: 20%;
+}
+
+.game-play h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.game-play {
+    text-align: center;
+    padding: 1rem;
+}
+
+#username-output {
+    font-size: 2rem;
+    padding: 5px;
+    color: white;
+}
+
+#start {
+    font-family: "Montserrat", sans-serif;
+    font-size: 5rem;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 3rem;
+    margin-top: 1em;
+    border-radius: 5px;
+    border-radius: 20%;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px 0px black;
+}
+
+#start:hover {
+    border: 8px solid black;
+    color: black;
+}
+
+#next {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 20%;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px 0px black;
+
+}
+
+#next:hover {
+    border: 0.2px solid black;
+    color: black;
 }
