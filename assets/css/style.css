@@ -67,7 +67,7 @@ h2 {
 }
 
 #modal-button:hover {
-    border: 8px solid black;
+    border: 2px solid black;
     color: black;
 }
 
@@ -92,4 +92,64 @@ h2 {
     margin: auto;
     width: 60%;
     font-size: 1.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.user h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#username {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    width: 30%;
+    height: 25px;
+    padding: 10px;
+    background: white;
+    color: black;
+    border: 5px solid black;
+
+}
+
+#submit {
+    font-family: "Montserrat", sans-serif;
+    padding: 18px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 20%;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px 0px black;
+
+}
+
+#submit:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+#errors {
+    color: white;
+    background-color: rgba(192, 16, 16, 0.6);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 1rem;
+    width: fit-content;
+    display: none;
+    border-radius: 20%;
 }
