@@ -75,4 +75,30 @@ function hideGame() {
     allAnswers.style.display = "none";
 }
 
+// timer 
+document.getElementById("start").addEventListener("click", function () {
+    console.log("timer started");
+
+    let timeLeft = 30;
+    let timerInterval = setInterval(startTimer, 1000);
+
+    document.getElementById("start").style.display = "none";
+
+    function startTimer() {
+        document.getElementById("timer").innerHTML = timeLeft + ' seconds remaining';
+        timeLeft--;
+
+        if (timeLeft === 0) {
+            clearInterval(timerInterval);
+
+            results();
+
+            resultSection.classList.remove("hide");
+            introSection.classList.add("hide");
+            formSection.classList.add("hide");
+            gameSection.classList.add("hide");
+            console.log("Times up!");
+        }
+    }
+});
 
