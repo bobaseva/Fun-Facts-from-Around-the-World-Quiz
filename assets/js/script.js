@@ -156,4 +156,19 @@ nextBtn.addEventListener("click", () => {
     setNextQuestion();
 });
 
+function incrementRight() {
+
+    let currentScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++currentScore;
+    console.log(`score ${currentScore}`);
+}
+
+function incrementWrong() {
+
+    let currentIncorrect = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++currentIncorrect;
+    console.log(`incorrect score ${currentIncorrect}`);
+}
+
+
 
