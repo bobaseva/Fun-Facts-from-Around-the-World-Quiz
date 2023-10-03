@@ -13,3 +13,34 @@ const questionElement = document.getElementById("facts");
 const optionElements = document.querySelectorAll(".options");
 const allAnswers = document.getElementById("answer-buttons");
 const nextBtn = document.querySelector(".next");
+
+//modal box settings
+
+modalButton.addEventListener("click", () => {
+    modal.style.display = "block";
+});
+
+closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    formSection.classList.add("hide");
+    gameSection.classList.add("hide");
+    resultSection.classList.add("hide");
+
+});
+
+function showHideIntro() {
+
+    introSection.classList.add("hide");
+    formSection.classList.remove("hide");
+}
+
