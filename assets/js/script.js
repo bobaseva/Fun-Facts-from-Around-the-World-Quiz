@@ -183,6 +183,23 @@ function setNextQuestion() {
     }
 }
 
+function results() {
+    console.log("result loaded");
+
+    if (document.getElementById("incorrect").innerText > document.getElementById("score").innerText) {
+        document.getElementById("result-message").textContent = "You need to catch up on your lyrics! Try again!";
+
+    } else if (document.getElementById("incorrect").innerText <= document.getElementById("score").innerText) {
+        document.getElementById("result-message").textContent = "You Rock! Why not found a cover band!?";
+    }
+}
+
+function locationReload() {
+
+    window.location.reload();
+}
+
+
 
 
 
