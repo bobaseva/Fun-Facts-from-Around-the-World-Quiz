@@ -22,13 +22,88 @@
 
     <!-- header section with logo -->
     <header>
-        
+        <h1 class="heading">
+            <img class="logo" src="assets/images/earth.png" alt="black and white planet earth globe">
+        </h1>
     </header>
 
-    <!-- Game area -->
+    <!-- main controls area -->
     <main>
+        <section class="intro">
+            <h2>Welcome to Fun Facts from Around the World Quiz!</h2>
+            <button id="start-game" onclick="showHideIntro()">Start Game</button>
+            <br>
+            <button class="settings-btn" id="modal-button">Instructions</button>
+        </section>
         
+        <!--modal instructions box-->
+        
+        <aside class="modal">
+            <div class="modal-content">
+                <h2>Instructions</h2>
+                <br>
+                <p>When you travel, you collect memories, souvenirs, stories, and so much more. The best travelers are the ones who are not
+                just tourists—they are the ones who have an unquenchable thirst for knowledge and cultural experiences.
+                If you fancy yourself a citizen of the world, check out these worldwide facts and travel quiz questions to test your
+                knowledge.
+                </p>
+                <ul>
+                    <li>When you start the game, you will be required to enter Your name. Here you can pick any name you want, be creative!</li>
+                    <li>Click GO! button and the timer will start to count down.</li>
+                    <li>You have 40 seconds to answer 10 questions choosing from 3 answer options. Pick the answer you think is right and click
+                    on NEXT button.</li>
+                    <li>Choose your answers wisely… but do not forget to have fun! Good luck!</li>
+                </ul>
+                <button class="close-button">Lets Play!</button>
+            </div>
+        </aside>
+        
+        
+        
+        <!-- players name form -->
+        <section class="user">
+            <h2>Just one more step...</h2>
+            <div class="user-input">
+                <label for="username">Please enter your Name:</label>
+                <br>
+                <input id="username" type="text" name="username">
+                <br>
+                <div id="errors">
+                    <!-- error message here displayed using javascipt -->
+                </div>
+                <button type="button" id="submit" onclick="enterBtn(); displayUsername(); hideGame()">Enter</button>
+            </div>
+        </section>
+        
+        <!-- game section -->
+        
+        <section class="game-play">
+            <h2>Fasten your seatbelts its going to be bumpy!</h2>
+            <button id="start" onclick="displayGame()">GO!</button>
+            <div id="timer">
+                <!-- timer is displayed here using javascript -->
+            </div>
+            <div>
+                <p id="username-output">
+                    <!-- name is diplayed here using javascipt -->
+                </p>
+            </div>
+            <div>
+                <p id="facts"></p>
+            </div>
+            <div id="answer-buttons" class="answer-options">
+                <button class="options"></button>
+                <br>
+                <button class="options"></button>
+                <br>
+                <button class="options"></button>
+            </div>
+            <div class="next">
+                <button id="next">Next</button>
+            </div>
+        </section>
     </main>
+
    
     <!-- Javascript -->
     <script src="assets/js/scipt.js"></script>
