@@ -102,3 +102,31 @@ document.getElementById("start").addEventListener("click", function () {
     }
 });
 
+function displayGame() {
+    console.log("Show game");
+
+    questionElement.classList.remove("hide");
+    allAnswers.style.display = "flex";
+
+    showQuestion();
+}
+
+let currentQuestion = 0;
+
+function showQuestion() {
+
+    const question = questions[currentQuestion];
+    questionElement.innerHTML = question.text;
+    console.log(`${question.text}`);
+
+    optionElements.forEach(function (button, index) {
+        button.textContent = question.options[index];
+        console.log(`Answer option:${question.options[index]}`);
+    });
+
+    let answerOptions = optionElements;
+    for (i = 0; i < answerOptions.length; i++) {
+        answerOptions[i].setAttribute("onclick", "answerSelected(this)");
+    }
+}
+
