@@ -170,5 +170,22 @@ function incrementWrong() {
     console.log(`incorrect score ${currentIncorrect}`);
 }
 
+function setNextQuestion() {
+
+    console.log("next question");
+    nextBtn.classList.add("hide");
+    showQuestion();
+
+    for (i = 0; i < optionElements.length; i++) {
+        optionElements[i].classList.remove("disabled");
+        optionElements[i].classList.remove("right-answer");
+        optionElements[i].classList.remove("wrong-answer");
+    }
+}
+
+
+
+
+
 
 
