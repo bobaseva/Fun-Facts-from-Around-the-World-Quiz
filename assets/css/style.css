@@ -24,3 +24,72 @@ body {
     padding: 5px;
     text-align: center;
 }
+
+h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    margin: 5px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start-game {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem 2rem;
+    border-radius: 20%;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px 0px black;
+}
+
+#start-game:hover {
+    border: 8px solid black;
+    color: black;
+}
+
+#modal-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem 2rem;
+    border-radius: 20%;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px 0px black;
+}
+
+#modal-button:hover {
+    border: 8px solid black;
+    color: black;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(99, 160, 209, 0.3);
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #000000;
+    height: auto;
+    padding: 30px;
+    margin: auto;
+    width: 60%;
+    font-size: 1.5rem;
+}
