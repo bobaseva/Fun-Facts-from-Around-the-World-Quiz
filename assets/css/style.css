@@ -50,7 +50,7 @@ h2 {
 }
 
 #start-game:hover {
-    border: 0.2px solid black;
+    border: 0.05px solid black;
     color: black;
 }
 
@@ -67,7 +67,7 @@ h2 {
 }
 
 #modal-button:hover {
-    border: 0.2px solid black;
+    border: 0.05px solid black;
     color: black;
 }
 
@@ -137,7 +137,7 @@ h2 {
 }
 
 #submit:hover {
-    border: 0.2px solid black;
+    border: 0.05px solid black;
     color: black;
 }
 
@@ -184,7 +184,7 @@ h2 {
 }
 
 #start:hover {
-    border: 8px solid black;
+    border: 0.05px solid black;
     color: black;
 }
 
@@ -202,7 +202,7 @@ h2 {
 }
 
 #next:hover {
-    border: 0.2px solid black;
+    border: 0.05px solid black;
     color: black;
 }
 
