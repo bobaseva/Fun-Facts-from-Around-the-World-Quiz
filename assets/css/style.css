@@ -205,3 +205,26 @@ h2 {
     border: 0.2px solid black;
     color: black;
 }
+
+#timer {
+    margin: 15px;
+    padding: 10px;
+}
+
+#facts {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px 0px black;
+}
+
+.options {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
