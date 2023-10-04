@@ -14,6 +14,7 @@ const optionElements = document.querySelectorAll(".options");
 const allAnswers = document.getElementById("answer-buttons");
 const nextBtn = document.querySelector(".next");
 
+
 //modal box settings
 
 modalButton.addEventListener("click", () => {
@@ -80,7 +81,7 @@ document.getElementById("start").addEventListener("click", function () {
     console.log("timer started");
 
     //variables
-    let timeLeft = 30;
+    let timeLeft = 40;
     let timerInterval = setInterval(startTimer, 1000);
 
     document.getElementById("start").style.display = "none";
@@ -104,6 +105,10 @@ document.getElementById("start").addEventListener("click", function () {
         }
     }
 });
+
+//timer stops when last question is answered
+
+
 
 //shows main game section onve "GO!" button is clicked
 function displayGame() {
