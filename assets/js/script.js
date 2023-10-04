@@ -1,3 +1,4 @@
+//declare all variables
 const introSection = document.querySelector(".intro");
 const formSection = document.querySelector(".user");
 const gameSection = document.querySelector(".game-play");
@@ -31,6 +32,7 @@ window.addEventListener("click", (e) => {
     }
 });
 
+//to hide all sections except control buttons
 document.addEventListener("DOMContentLoaded", function () {
 
     formSection.classList.add("hide");
@@ -39,12 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+//clicked Start Game button hides main controls
 function showHideIntro() {
 
     introSection.classList.add("hide");
     formSection.classList.remove("hide");
 }
 
+//shows an error when Nmae is not entered preventing form strating the game
 function enterBtn() {
     console.log("function fired");
 
@@ -62,6 +66,7 @@ function enterBtn() {
     }
 }
 
+//displays plaers Name before starting the game
 function displayUsername() {
 
     usernameP.innerHTML = userName.value;
@@ -106,10 +111,6 @@ document.getElementById("start").addEventListener("click", function () {
     }
 });
 
-//timer stops when last question is answered
-
-
-
 //shows main game section onve "GO!" button is clicked
 function displayGame() {
     console.log("Show game");
@@ -147,11 +148,11 @@ function showQuestion() {
 //checks selected answer 
 function answerSelected(answer) {
 
-    //variables to define the selected answer and the correct answer 
+    //variables 
     let selectedAnswer = answer.innerHTML;
     let correctAnswer = questions[currentQuestion].answer;
 
-    //checks the selected answer if this is equal to the correct answer
+    //checks if the answer is correct
     if (selectedAnswer === correctAnswer) {
         answer.classList.add("right-answer");
         incrementRight();
@@ -161,22 +162,22 @@ function answerSelected(answer) {
         incrementWrong();
     }
 
-    //show next button to get the next question 
+    //next question button
     nextBtn.classList.remove("hide");
 
-    //loop for diabling answer options so only one answer can be choosen
+    //function for only one answer to be chosen
     for (i = 0; i < optionElements.length; i++) {
         optionElements[i].classList.add("disabled");
     }
 }
 
-//eventlistener to fire function to display the next question
+//displays the next question
 nextBtn.addEventListener("click", () => {
     currentQuestion++;
     setNextQuestion();
 });
 
-//function to increment score of correct answers 
+//correct answers score
 function incrementRight() {
 
     let currentScore = parseInt(document.getElementById("score").innerText);
@@ -184,7 +185,7 @@ function incrementRight() {
     console.log(`score ${currentScore}`);
 }
 
-//function to increment score of wrong answers
+//wrong answers score
 function incrementWrong() {
 
     let currentIncorrect = parseInt(document.getElementById("incorrect").innerText);
@@ -192,14 +193,13 @@ function incrementWrong() {
     console.log(`incorrect score ${currentIncorrect}`);
 }
 
-// function to set the next question
+// function sets the next question
 function setNextQuestion() {
 
     console.log("next question");
     nextBtn.classList.add("hide");
     showQuestion();
 
-    // loop for removing the added classlist from answer buttons
     for (i = 0; i < optionElements.length; i++) {
         optionElements[i].classList.remove("disabled");
         optionElements[i].classList.remove("right-answer");
@@ -207,7 +207,7 @@ function setNextQuestion() {
     }
 }
 
-//function to show a user message on result page depending on the achieved score
+//shows users result score and the message according to those results
 function results() {
     console.log("result loaded");
 
@@ -219,13 +219,13 @@ function results() {
     }
 }
 
-// function to reload document when clicking on home-button in result section
+//reloads document when home-button is clicked
 function locationReload() {
 
     window.location.reload();
 }
 
-//end of JavaScript code
+//end
 
 
 

@@ -6,6 +6,7 @@
     border: 0;
 }
 
+/*body and heading*/
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -25,6 +26,7 @@ body {
     text-align: center;
 }
 
+/*main controls*/
 h2 {
     font-size: 3rem;
     padding-bottom: 1rem;
@@ -54,6 +56,7 @@ h2 {
     color: black;
 }
 
+/*modal box*/
 #modal-button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -114,10 +117,12 @@ h2 {
     color: black;
 }
 
+/*hides main controls*/
 .hide {
     display: none;
 }
 
+/*Name form*/
 .user h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -174,6 +179,7 @@ h2 {
     border-radius: 20%;
 }
 
+/*game section*/
 .game-play h2 {
     text-align: center;
     font-size: 2rem;
