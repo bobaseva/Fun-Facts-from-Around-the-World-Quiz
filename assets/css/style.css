@@ -14,6 +14,9 @@ body {
     background-image: url(../images/bg111.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .heading {
@@ -138,7 +141,7 @@ h2 {
 
 #username {
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     width: 30%;
     height: 25px;
     padding: 10px;
@@ -191,7 +194,7 @@ h2 {
 }
 
 #username-output {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 5px;
     color: black;
 }
@@ -235,13 +238,13 @@ h2 {
 #timer {
     margin: 1px;
     padding: 1px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: rgba(192, 16, 16, 0.8);
 }
 
 #facts {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 1rem;
 }
 
@@ -251,18 +254,12 @@ h2 {
     box-shadow: 5px 5px 10px 0px black;
 }
 
-.options {
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-}
 
 .options {
     background: rgba(0, 0, 0, 0.3);
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: 5px;
     margin: 5px;
     width: 100%;
