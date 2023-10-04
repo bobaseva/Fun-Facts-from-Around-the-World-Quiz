@@ -1,6 +1,6 @@
 # Fun Facts from Around the World Quiz
 
-![fully responsive website example image](assets/READMEfiles/response.j)
+![fully responsive website example image](assets/READMEfiles/response.jpg)<br>
 [View deployed project here]( https://bobaseva.github.io/Fun-Facts-from-Around-the-World-Quiz/)
 ---
 
@@ -49,19 +49,19 @@
 
 ## Introduction
 
-This game was developed for people who loves not only traveling but to collect memories, souvenirs, stories, and so much more. The best travelers are the ones who are not just tourists—they are the ones who have an unquenchable thirst for cultural experiences. This game aims to test the most unusual knowledgeabout different countries across the Globe.
+This game was developed for people who loves not only traveling but to collect memories, souvenirs, stories, and so much more. The best travelers are the ones who are not just tourists—they are the ones who have an unquenchable thirst for cultural experiences. This game aims to test the most unusual knowledge about different countries across the Globe.
 
 ## User stories
 
-1. Color cheme and design of the game is not too bright and flashy as most of the game tends to be
-2. Quiz topic seem to stand out from usual Travel quizes
+1. Color scheme and design of the game is not too bright and flashy as most of the game tends to be
+2. Quiz topic seem to stand out from usual Travel quizzes
 3. Questions are interesting and unusual
-4. Answers options are treaky what makes the game interesting
+4. Answers options are tricky what makes the game interesting
 
 ## User goals
 
 1.	To be able to play the game on various devices
-2.	To be able to see questions and asnwers quickly without wasting my time on trying to figure out the text
+2.	To be able to see questions and answers quickly without wasting my time on trying to figure out the text
 3.	To be able to know the remaining time
 4.	Not to wait for any content to load longer than the rest of the page
 
@@ -73,7 +73,7 @@ This website is a single page platform, as the main priority is straightforward 
 
 ![alt text](assets/READMEfiles/colorpalette.png)<br>
 
-This colors were set by using color palette generator Coolors.co platform clearly showing very simple and pleasent to look at color choice for this game design.
+This colors were set by using color palette generator Coolors.co platform clearly showing very simple and pleasant to look at color choice for this game design.
 
 ### Typography
 
@@ -112,13 +112,13 @@ All buttons of the game have the same design, they are responsive and change sha
 
 ### Favicon
 
-Favicon icon was created as a different image from the logo in order to stand out from the grey background of the serach engines and to look more appealing for the game users.
+Favicon icon was created as a different image from the logo in order to stand out from the grey background of the search engines and to look more appealing for the game users.
 
 ![alt text](assets/READMEfiles/favicon_heart.png)
 
 ### Modal box
 
-MOdal box was created in order to avoin distraction from the game with the large amount of text for game instructions. The playes can click on the incstruction button in order to read the text and then go back to the homepage and continue with the game.
+Modal box was created in order to avoid distraction from the game with the large amount of text for game instructions. The playrs can click on the instruction button in order to read the text and then go back to the homepage and continue with the game.
 
 ![alt text](assets/READMEfiles/modal_box.jpg)
 
@@ -136,14 +136,14 @@ The game area consists of some encouraging text, timer, players Name and questio
 
 ### Future Implementations
 
-Overall performance of the website can be improved by trying to upload background image of different size or format, as it can slow down the loading time. Also timer function can be updated in order to stop once the player clicked through all 10 questions, instead the timer goes on until it gets to 0 even if the player finished all the questions beforhand. All the options for the stop timer function I was able to find appeared to interfere with the existing code so it was decided to leave timer functions as it is for now.
+Overall performance of the website can be improved by trying to upload background image of different size or format, as it can slow down the loading time. Also timer function can be updated in order to stop once the player clicked through all 10 questions, instead the timer goes on until it gets to 0 even if the player finished all the questions beforehand. All the options for the stop timer function I was able to find appeared to interfere with the existing code so it was decided to leave timer functions as it is for now.
 
 ### Bugs and Challenges
 
 There were several bugs I came across while developing this game:
 
-1. The favicon icon appeared not to load regardless of the way I was trying to upload it to the root directory. Both options were unsuccesfull to load the icon. I have tried option of copying the code from the website and uploading the whole folder to the directory and the one advised on Love Maths project with single line of code under the Title and single file upload. In the end the icon did appear on the deployed version of the website only, so it was deciced to leave it as it is.
-2. Quiz questions functions bug was the most challenging as JS file stopped working when getting to the certain line fo the code, and from many more than 'first glance' JS code was perfectly fine on all line fo the file. After long time of research I managed to find the bug in the HTML file. As this version of repository was created as a copy of the first draft and most of the code was copied directly to the directory from the version that was created first, thus some lines were simply overwritten.
+1. The favicon icon appeared not to load regardless of the way I was trying to upload it to the root directory. Both options were unsuccessfull to load the icon. I have tried option of copying the code from the website and uploading the whole folder to the directory and the one advised on Love Maths project with single line of code under the Title and single file upload. In the end the icon did appear on the deployed version of the website only, so it was decided to leave it as it is.
+2. Quiz questions functions bug was the most challenging as JS file stopped working when getting to the certain line for the code, and from many more than 'first glance' JS code was perfectly fine on all line for the file. After long time of research I managed to find the bug in the HTML file. As this version of repository was created as a copy of the first draft and most of the code was copied directly to the directory from the version that was created first, thus some lines were simply overwritten.
 3. Also minor background bug was easily fixed. Background image appeared to move/shake everytime new button came up or ckicked on. First I tried to fix this issue with reducing borders of the buttons but later on I have managed to perfectly place the background with some extra css code.
 
 ![alt text](assets/READMEfiles/functions_bug.jpg)
@@ -211,12 +211,12 @@ Manual testing was done to check common elements and how they perform on differe
 
 1.	Clicking on the main control buttons brings user to the aimed location
 2.	Clicking on the Instructions buttons user was able to make Modal box appear
-3.	User was able to make Modal box dissappear by clicking on the appropriate button
-4.	User was able to submit his name into the form secton
+3.	User was able to make Modal box disappear by clicking on the appropriate button
+4.	User was able to submit his name into the form section
 5.	Users name appeared later alongside the game
 6.	User was presented with the correct countdown timer for the game
 7.	User was able to choose the answer and answer box was highlighted red/blue depending if the answer was correct
-8.	User recieved his score once the time was out
+8.	User received his score once the time was out
 9.	User was able to go back to the homepage after he finished the game
 
 Following devices were used:
