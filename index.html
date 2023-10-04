@@ -105,7 +105,9 @@
             <div id="answer-buttons" class="answer-options">
                 <button class="options"></button>
                 <br>
+                <br>
                 <button class="options"></button>
+                <br>
                 <br>
                 <button class="options"></button>
             </div>
@@ -115,6 +117,18 @@
         </section>
     </main>
 
+    <!-- final score section -->
+    <section class="result">
+        <h2>Times Up!</h2>
+        <p id="result-message">
+            <!-- result message will apear using javascript -->
+        </p>
+        <br>
+        <p class="scores" id="right">Right Answers:<span id="score">0</span></p>
+        <p class="scores" id="wrong">Wrong Answers:<span id="incorrect">0</span></p>
+        <br>
+        <button id="home" onclick="locationReload()">Home</button>
+    </section>
    
     <!-- Javascript -->
     <script src="assets/js/script.js"></script>

@@ -63,7 +63,7 @@ function enterBtn() {
 
 function displayUsername() {
 
-    usernameP.innerHTML = userName.value + "!";
+    usernameP.innerHTML = userName.value;
     console.log("Username:", userName.value);
 }
 
@@ -79,11 +79,13 @@ function hideGame() {
 document.getElementById("start").addEventListener("click", function () {
     console.log("timer started");
 
+    //variables
     let timeLeft = 30;
     let timerInterval = setInterval(startTimer, 1000);
 
     document.getElementById("start").style.display = "none";
 
+    //counts down the remaining time
     function startTimer() {
         document.getElementById("timer").innerHTML = timeLeft + ' seconds remaining';
         timeLeft--;
@@ -91,6 +93,7 @@ document.getElementById("start").addEventListener("click", function () {
         if (timeLeft === 0) {
             clearInterval(timerInterval);
 
+            //shows result once time is up
             results();
 
             resultSection.classList.remove("hide");
@@ -102,23 +105,28 @@ document.getElementById("start").addEventListener("click", function () {
     }
 });
 
+//shows main game section onve "GO!" button is clicked
 function displayGame() {
     console.log("Show game");
 
     questionElement.classList.remove("hide");
     allAnswers.style.display = "flex";
 
+    //shows question and answer options
     showQuestion();
 }
 
+//index for questions array 
 let currentQuestion = 0;
 
+//displays questions and answer options
 function showQuestion() {
 
+    //question
     const question = questions[currentQuestion];
     questionElement.innerHTML = question.text;
     console.log(`${question.text}`);
-
+ 
     optionElements.forEach(function (button, index) {
         button.textContent = question.options[index];
         console.log(`Answer option:${question.options[index]}`);
@@ -130,11 +138,15 @@ function showQuestion() {
     }
 }
 
+
+//checks selected answer 
 function answerSelected(answer) {
 
+    //variables to define the selected answer and the correct answer 
     let selectedAnswer = answer.innerHTML;
     let correctAnswer = questions[currentQuestion].answer;
 
+    //checks the selected answer if this is equal to the correct answer
     if (selectedAnswer === correctAnswer) {
         answer.classList.add("right-answer");
         incrementRight();
@@ -144,18 +156,22 @@ function answerSelected(answer) {
         incrementWrong();
     }
 
+    //show next button to get the next question 
     nextBtn.classList.remove("hide");
 
+    //loop for diabling answer options so only one answer can be choosen
     for (i = 0; i < optionElements.length; i++) {
         optionElements[i].classList.add("disabled");
     }
 }
 
+//eventlistener to fire function to display the next question
 nextBtn.addEventListener("click", () => {
     currentQuestion++;
     setNextQuestion();
 });
 
+//function to increment score of correct answers 
 function incrementRight() {
 
     let currentScore = parseInt(document.getElementById("score").innerText);
@@ -163,6 +179,7 @@ function incrementRight() {
     console.log(`score ${currentScore}`);
 }
 
+//function to increment score of wrong answers
 function incrementWrong() {
 
     let currentIncorrect = parseInt(document.getElementById("incorrect").innerText);
@@ -170,12 +187,14 @@ function incrementWrong() {
     console.log(`incorrect score ${currentIncorrect}`);
 }
 
+// function to set the next question
 function setNextQuestion() {
 
     console.log("next question");
     nextBtn.classList.add("hide");
     showQuestion();
 
+    // loop for removing the added classlist from answer buttons
     for (i = 0; i < optionElements.length; i++) {
         optionElements[i].classList.remove("disabled");
         optionElements[i].classList.remove("right-answer");
@@ -183,6 +202,7 @@ function setNextQuestion() {
     }
 }
 
+//function to show a user message on result page depending on the achieved score
 function results() {
     console.log("result loaded");
 
@@ -194,11 +214,13 @@ function results() {
     }
 }
 
+// function to reload document when clicking on home-button in result section
 function locationReload() {
 
     window.location.reload();
 }
 
+//end of JavaScript code
 
 
 

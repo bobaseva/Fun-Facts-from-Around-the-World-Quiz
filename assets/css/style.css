@@ -185,9 +185,9 @@ h2 {
 }
 
 #username-output {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 5px;
-    color: white;
+    color: black;
 }
 
 #start {
@@ -229,10 +229,13 @@ h2 {
 #timer {
     margin: 15px;
     padding: 10px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(192, 16, 16, 0.4);
 }
 
 #facts {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 1rem;
 }
 
@@ -246,5 +249,188 @@ h2 {
     background: rgba(0, 0, 0, 0.3);
     color: white;
     font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+
+.options {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+
+.right-answer {
+    background-color: rgba(16, 150, 212, 0.6);
+    border: 0.02px solid white;
+    color: white
+}
+
+.wrong-answer {
+    background-color: rgba(192, 16, 16, 0.6);
+    ;
+    border: 0.02px solid white;
+    color: white;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+/*result section */
+.result h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.result {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#result-message {
+    padding: 1rem;
+}
+
+.scores {
+    padding: 1rem;
+}
+
+#right {
+    color: rgba(16, 150, 212, 0.8);
+}
+
+#score-right {
+    color: rgba(16, 150, 212, 0.8);
+}
+
+#wrong {
+    color: rgba(192, 16, 16, 0.8);
+}
+
+#score-wrong {
+    color: rgba(192, 16, 16, 0.8);
+}
+
+#home {
+    font-family: "Montserrat", sans-serif;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 20%;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px 0px black;
+}
+
+#home:hover {
+    border: 0.02px solid black;
+    color: black;
+}
+
+/*media queries*/
+
+
+/*for screen sizes 855px and down*/
+@media screen and (max-width:855px) {
+    .logo {
+        height: 15rem;
+        padding: 3px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #start-game {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    #info {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    #lyrics {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .options {
+        font-size: 1rem;
+        padding: 3px;
+        margin: 2px;
+    }
+
+    #next {
+        font-size: 1rem;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .rules h1 {
+        font-size: 1rem;
+        margin: 15px;
+    }
+
+    .rules ul {
+        font-size: 0.8rem;
+    }
+
+    #play-now {
+        padding: 15px;
+        margin: 15px;
+        font-size: 0.8rem;
+    }
+}
+
+/*for screen sizes 470px and down*/
+@media screen and (max-width:470px) {
+    h2 {
+        font-size: 1rem;
+    }
+
+    #start-game {
+        font-size: 0.7rem;
+        padding: 15px;
+    }
+
+    #info {
+        font-size: 0.7rem;
+        padding: 15px;
+    }
+
+    .user-input label {
+        font-size: 1rem;
+    }
+
+    #lyrics {
+        font-size: 0.8rem;
+    }
+
+    .options {
+        font-size: 0.8rem;
+    }
+
+    .result h1 {
+        font-size: 0.8rem;
+    }
+
+    #result-message {
+        font-size: 0.8rem;
+    }
+
+    .result {
+        font-size: 1.2rem;
+    }
+
+    #home {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
 }
